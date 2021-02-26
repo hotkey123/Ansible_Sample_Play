@@ -1,0 +1,5 @@
+---
+- hosts: all
+  tasks:
+  - name: Check ping command on inventory servers to check connectivity
+    ping:
