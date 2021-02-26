@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: yes  #### to become a root user to install any software
+  tasks:
+  - name: installing tree package
+    yum:
+      name: tree
+      state: present
